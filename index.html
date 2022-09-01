@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.js">
+</head>
+<body>
+    <script src="index.js"></script>
+    <h4>1.Create one function with zero parameter having a console statement.</h4>
+    <pre>function hello(){
+        console.log("hello")
+    }
+    hello();</pre>
+    <h4>2.Create one function which takes two values as a parameter and print the sum of them as "Sum of 3, 4 is 7"</h4>
+    <pre>function add(a,b){
+        console.log(a+b);
+    }
+    add(3,4);
+</pre>
+<h4>3.Create one arrow function</h4>
+<pre>let arrow=()=>{
+    console.log("arrow")
+}
+arrow();</pre>
+<h5><pre>4."Print output: 
+    var x = 21;
+    var girl = function () {
+        console.log(x);
+        var x = 20;
+    };
+    girl ();"
+</pre>
+<p> output: undefined</p>
+<h5><pre>5. "Print output: 
+    var x = 21;
+    girl ();
+    console.log(x)
+    function girl() {
+        console.log(x);
+        var x = 20;
+    };
+    "</pre></h5>
+</h5>
+<p>output: 21</p>
+<h5><pre>6."Print output
+
+    var x = 21;
+    a();
+    b();
+    console.log(a);
+    a = function() {
+        
+       x = 20;
+      console.log(x);
+    };
+    b = function() {
+        
+        x = 40;
+       console.log(x);
+    };"</pre></h5>
+    <p>output:  a is not defined</p>
+    <h4>7.Write a function that accepts parameter n and returns factorial of n</h4>
+    <pre>function factorial(n){
+        let answer = 1;
+        if (n == 0 || n == 1){
+          console.log(answer);
+        }else{
+          for(var i = n; i >= 1; i--){
+            answer = answer * i;
+          }
+          console.log(answer);
+        }  
+      }
+       factorial(4);</pre>
+</body>
+</html>
